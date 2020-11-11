@@ -1,0 +1,52 @@
+.member-visits.stats-dashboard.field {
+	margin: 0 !important;
+	
+}
+
+.member-visits.stats-dashboard.field .form__field-holder {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	flex: none;
+	padding: 2rem !important;
+}
+
+/* .member-visits.stats-dashboard.field .stats h2 {
+	font-size: 2rem;
+	font-weight: 700;
+} */
+
+.member-visits.stats-dashboard.field .stats-fields {
+	display: flex;
+}
+
+.member-visits.stats-dashboard.field .stat-block {
+	flex-grow: 1;
+}
+
+.member-visits.stats-dashboard.field .stat-title {
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.member-visits.stats-dashboard.field .stat-block .stat {
+	display: block;
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+.grey-text {			color: #686868; }
+.green-text {			color: #1ca007; }
+.red-text {				color: #dc2804; }
+.centered-text {		text-align: center; }
+
+.member-visits.filter-fields .ui-accordion-content {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* little hack so the sort-by dropdown doesn't get hidden by parent overflow:hidden; */
+#Form_EditForm_filters_Sortrecords_Holder {
+	padding-bottom: 75px;
+}

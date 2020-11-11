@@ -1,0 +1,6 @@
+---
+Name: membervisits
+---
+SilverStripe\Security\Member:
+  extensions:
+    - MemberExtension
