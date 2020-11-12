@@ -1,5 +1,7 @@
 <?php
 
+namespace PlasticStudio\MemberVisits;
+
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Member;
 
@@ -17,7 +19,6 @@ class MemberVisit extends DataObject {
 		'Created' => 'Date',
 		'Member.Name' => 'Member'
 	];
-	
 	
 	private static $searchable_fields = [
 		'Member.ID'

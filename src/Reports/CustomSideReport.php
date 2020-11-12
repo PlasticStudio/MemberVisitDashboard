@@ -1,5 +1,7 @@
 <?php
 
+namespace PlasticStudio\MemberVisits;
+
 use SilverStripe\Dev\Debug;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\Reports\Report;
@@ -13,6 +15,7 @@ use SilverStripe\View\Requirements;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\DropdownField;
+use PlasticStudio\MemberVisits\MemberVisit;
 use SilverStripe\Forms\ToggleCompositeField;
 
 class CustomSideReport_MemberVisits extends Report 
@@ -106,8 +109,7 @@ class CustomSideReport_MemberVisits extends Report
                         'Created' => 'Visit',
                         'MemberName' => 'Member name',
                         'MemberFirstVisit' => 'Member first logged in',
-                        'MemberLastVisit' => 'Member last visit',
-                        //'MemberNumberOfVisits' => 'Member total visits'
+                        'MemberLastVisit' => 'Member last visit'
                     ]
                 )->addExtraClass('no-change-track'),
                 DropdownField::create(
@@ -125,7 +127,7 @@ class CustomSideReport_MemberVisits extends Report
 
     public function getCMSFields()
     {
-        Requirements::css('app/cms/member-visits-dashboard.css');
+        Requirements::css('client/css/member-visits-dashboard.css');
         $fields = new FieldList();
 
         if ($description = $this->description()) {

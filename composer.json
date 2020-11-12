@@ -1,0 +1,29 @@
+{
+	"name": "plasticstudio/membervisits",
+    "type": "silverstripe-vendormodule",
+	"description": "CMS report for Silverstripe website that displays Member login data",
+	"homepage": "https://psdigital.co.nz",
+	"keywords": ["silverstripe","silverstripesearch"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Jeremy Cole",
+			"homepage": "https://psdigital.co.nz",
+			"email": "jeremy@psdigital.co.nz"
+		}
+	],
+	"support": {
+		"issues": "http://github.com/plasticstudio/membervisits/issues"
+	},
+    "extra": {
+        "expose": [
+            "client"
+        ]
+    },
+	"require": {
+		"silverstripe/cms": "^4",
+		"silverstripe/framework": "^4",
+        "silverstripe/vendor-plugin": "^1"
+	},
+	"minimum-stability": "dev"
+}
