@@ -127,7 +127,7 @@ class CustomSideReport_MemberVisits extends Report
 
     public function getCMSFields()
     {
-        Requirements::css('client/css/member-visits-dashboard.css');
+        Requirements::css('/resources/plasticstudio/membervisits/client/css/member-visits-dashboard.css');
         $fields = new FieldList();
 
         if ($description = $this->description()) {

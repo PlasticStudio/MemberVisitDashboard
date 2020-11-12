@@ -3,4 +3,4 @@ Name: membervisits
 ---
 SilverStripe\Security\Member:
   extensions:
-    - MemberExtension
+    - PlasticStudio\MemberVisits\MemberExtension
