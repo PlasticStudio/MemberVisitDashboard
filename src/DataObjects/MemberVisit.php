@@ -7,6 +7,7 @@ use SilverStripe\Security\Member;
 
 class MemberVisit extends DataObject {	
 
+	private static $table_name='MemberVisit';
 	private static $singular_name = 'Member Visit';
 	private static $plural_name = 'Member Visits';
 	private static $description = 'Timestamp of login event for a member';
